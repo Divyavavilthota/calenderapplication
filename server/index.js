@@ -8,11 +8,7 @@ const app = express();
 const port = 5001;
 
 // Middleware
-app.use(cors({
-    origin:["https://deploy-mern-1whq.vercel.app"],
-    methods:["POST","GET"],
-    credentials: true
-  }));
+app.use(cors());
 app.use(bodyParser.json());
 MONGO_URI="mongodb://localhost:27017/companiesDB"
 PORT=5001
