@@ -1,39 +1,39 @@
-/* EditCompany.css */
+
 .edit-company-container {
-  max-width: 800px; /* Keep container width */
-  margin: 90px auto;
-  padding: 80px; /* Reduced padding for better spacing */
+  max-width: 350px;
+  margin: 10px auto;
+  padding: 10px; /* Reduced padding for better spacing */
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .edit-company-container h3 {
   text-align: center;
-  margin-bottom: 20px; /* Increased margin for spacing */
+  margin-bottom: 0px; /* Increased margin for spacing */
   color: #333;
-  font-size: 50px; /* Adjusted for better readability */
+  font-size: 15px; /* Adjusted for better readability */
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 100%; /* Ensure the form takes up full width of the container */
+  width: 90%; /* Ensure the form takes up full width of the container */
 }
 
 form div {
-  margin-bottom: 25px; /* Adjusted margin for better spacing */
+  margin-bottom: 0px; /* Adjusted margin for better spacing */
 }
 
 form label {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   color: #333333;
-  font-size: 50px; /* Adjusted font size for labels */
+  font-size: 10px; /* Adjusted font size for labels */
 }
 
 form input, form textarea {
   padding: 12px; /* Adjusted padding for better input field size */
-  font-size: 50px; /* Adjusted font size for better readability */
+  font-size: 10px; /* Adjusted font size for better readability */
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 100%; /* Ensure the inputs take full width of the container */
@@ -41,19 +41,22 @@ form input, form textarea {
 
 form textarea {
   resize: vertical;
-  min-height: 150px; /* Increased minimum height for better textarea space */
+  min-height: 20px; /* Increased minimum height for better textarea space */
 }
 
 form button {
-  padding: 15px 30px; /* Adjusted padding for better button size */
+  padding: 10px 10px; /* Adjusted padding for better button size */
   background-color: #4CAF50;
   color: white;
   border: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   border-radius: 4px;
-  font-size: 50px; /* Adjusted font size for the button */
+  font-size: 8px; /* Adjusted font size for the button */
   cursor: pointer;
   transition: background-color 0.3s;
-  width: 100%; /* Make button full width */
+  width: 90%; /* Make button full width */
 }
 
 form button:hover {

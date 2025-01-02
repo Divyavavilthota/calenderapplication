@@ -132,19 +132,13 @@ const Dashboard = () => {
                 )}
               </td>
               <td>
-                {company.nextCommunication.type
-                  ? `${company.nextCommunication.type} - ${company.nextCommunication.date}`
-                  : "No scheduled communication"}
+                {company.nextCommunication ? (
+                  `${company.nextCommunication.type} - ${company.nextCommunication.date}`
+                ) : (
+                  <span>No scheduled communication</span>
+                )}
               </td>
-              <td
-                className={`status ${
-                  company.status === "Overdue"
-                    ? "overdue"
-                    : company.status === "Due Today"
-                    ? "due-today"
-                    : ""
-                }`}
-              >
+              <td className={`status ${company.status === "Overdue" ? "overdue" : "due-today"}`}>
                 {company.status}
               </td>
               <td>
@@ -157,23 +151,24 @@ const Dashboard = () => {
         </tbody>
       </table>
 
-      {/* Modal for writing notes */}
       {showModal && (
         <div className="modal">
           <div className="modal-content">
             <h2>Write Notes</h2>
-            <form onSubmit={handleSubmitNotes}>
-              <div>
-                <label>Notes:</label>
-                <textarea
-                  name="notes"
-                  value={communicationData.notes}
-                  onChange={handleInputChange}
-                />
-              </div>
-              <button type="submit">Submit</button>
+            <form>
+              <label htmlFor="notes">Notes</label>
+              <textarea
+                name="notes"
+                value={communicationData.notes}
+                onChange={handleInputChange}
+                rows="5"
+                placeholder="Write your notes here"
+              />
+              <button type="button" onClick={handleSubmitNotes}>
+                Save Notes
+              </button>
               <button type="button" onClick={handleModalClose}>
-                Close
+                Cancel
               </button>
             </form>
           </div>

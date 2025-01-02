@@ -8,15 +8,21 @@ const app = express();
 const port = 5001;
 
 // Middleware
-app.use(cors());
+app.use(cors(
+  {
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials: true
+  }
+));
 app.use(bodyParser.json());
+MONGO_URI="mongodb://localhost:27017/companiesDB"
+PORT=5001
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/companiesDB', {
+mongoose.connect(MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
 // Define Company Schema with timestamps
 const companySchema = new mongoose.Schema({
   name: String,

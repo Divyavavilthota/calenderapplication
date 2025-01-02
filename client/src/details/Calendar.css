@@ -1,18 +1,15 @@
-/* Calendar.css */
 html, body {
-  height: 100%;
+  height: 50%;
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: black;
   color: white;
 }
-/* Calendar.css */
 
-/* Increase the font size of the month label (e.g., December) */
 .react-calendar__navigation__label {
-  font-size: 40px; /* Adjust the size as needed */
+  font-size: 10px;
   font-weight: bold;
-  color: white; /* Adjust color as needed */
+  color: white;
 }
 
 .calendar-container {
@@ -20,30 +17,36 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 20px;
+  height: 95vh;
+  padding: 5px;
   box-sizing: border-box;
 }
 
 h2 {
-  top:20px;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: 15px;
+  margin-top: 0; /* Removed gap between the top and the title */
+  margin-bottom: 10px; /* Space between the title and the calendar */
   color: white;
 }
 
+.calendar-box-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 30px; /* Decreased width for the container */ /* Space between the calendar and overdue info */
+}
+
 .calendar-box {
-  width: 100%; /* Adjusted width to 95% for an even bigger box */
-  max-width: 2000px; /* Increased max width for larger display */
+  width: 50%; /* Decreased width */
   background-color: white;
-  padding: 50px; /* Increased padding for better spacing */
+  padding: 20px; /* Increased padding for better spacing */
   border-radius: 10px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 
 .react-calendar {
-  max-width: 100%;
+  max-width:100%;
   width: 100%;
   margin: 0 auto;
   border-radius: 10px;
@@ -52,15 +55,15 @@ h2 {
 
 .react-calendar__tile {
   border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 100px; /* Larger font size */
-  padding: 18px; /* Larger padding */
+  border-radius: 2px;
+  font-size: 10px;
+  padding: 5px;
   transition: background-color 0.3s ease;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 150px; /* Increased height */
-  width: 80px; /* Increased width */
+  height: 50px;
+  width: 40px;
   color: black;
 }
 
@@ -86,31 +89,29 @@ h2 {
 .react-calendar__month-view__weekdays__weekday {
   flex: 1;
   text-align: center;
-  font-size: 50px; /* Slightly larger font for weekdays */
+  font-size: 10px;
   color: black;
   font-weight: bold;
 }
 
 .react-calendar__month-view__days__day {
   display: inline-block;
-  width: 80px; /* Increased width for better alignment */
+  width: 30px;
   text-align: center;
-  padding: 10px; /* Added padding for spacing */
-  font-size: 50px; /* Larger font size */
+  padding: 10px;
+  font-size: 10px;
   color: black;
 }
 
 .react-calendar__month-view__days__day--weekend {
-  color: #ff6347; /* Highlight weekends */
+  color: #ff4747;
 }
 
-/* Highlighted overdue or due today dates */
 .highlighted {
   background-color: #ff6347;
   color: white;
 }
 
-/* Overdue and Due Today status color */
 .status-overdue {
   color: red;
 }
@@ -120,19 +121,17 @@ h2 {
 }
 
 .overdue-info {
-  margin-top: 30px;
-  text-align: center;
-  color: white;
+  flex: 1; /* Allow it to take available space */
   background-color: #222;
-  padding: 20px;
+  color: white;
+  padding:9px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
+  max-width: 250px; /* Decreased width for the overdue info */
 }
 
 .overdue-info h3 {
-  font-size: 50px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .overdue-info ul {
@@ -141,10 +140,10 @@ h2 {
 }
 
 .overdue-info li {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
 
 .overdue-info p {
-  font-size: 50px;
+  font-size: 12px;
 }

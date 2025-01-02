@@ -135,7 +135,7 @@ const EditCompany = () => {
             onChange={handleInputChange}
           />
         </div>
-        <button type="submit">Save Changes</button>
+        <button type="submit"><center>Save Changes</center></button>
       </form>
     </div>
   );

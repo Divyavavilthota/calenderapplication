@@ -1,7 +1,7 @@
 /* Navbar.css */
 
 .navbar {
-    padding-right: 90px;
+    padding-right: 30px;
     display: flex; /* Added flex display for navbar */
     justify-content: flex-end; /* Aligns the navbar content to the right */
 }
@@ -13,13 +13,13 @@
 }
 
 .navbar-item {
-    margin: 0 150px; /* Adjusted the margin between items */
+    margin: 0 10px; /* Adjusted the margin between items */
 }
 
 .navbar-link {
     color: white;
     text-decoration: none;
-    font-size: 80px;
+    font-size: 20px;
     font-weight: bold;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
@@ -36,19 +36,19 @@
     position: relative;
     align-items: center;
     display: flex; /* Allows manual positioning */
-    top: 70px;
-    left:70px; /* Moves the logo upwards */
+    top: 20px;
+    left:30px; /* Moves the logo upwards */
   }
   
   .logo1 {
-    width: 200px;
+    width: 40px;
     height: auto;
     display: block;
     border-radius: 30%;
   }
   .logo-text {
     color: white; /* Match text color with navbar theme */
-    font-size: 60px; /* Adjust font size */
+    font-size: 40px; /* Adjust font size */
     font-weight: bold; /* Make the text bold */
     margin-left: 10px; /* Add space between logo and text */
   }

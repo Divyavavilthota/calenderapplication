@@ -69,22 +69,22 @@ const CommunicationFrequencyReport = () => {
     <div
       style={{
         position: "absolute", // Ensure it's fixed in the top-left corner
-        top: "500px", // Increased gap at the top for more space
+        top: "150px", // Increased gap at the top for more space
         left: "20px",
-        width: "1000px",
-        marginLeft: "1300px",
-        padding: "60px", // Increased padding for better spacing
+        width: "390px",
+        marginLeft: "100px",
+        padding: "10px", // Increased padding for better spacing
         backgroundColor: "#222", // Darker background for better contrast
         borderRadius: "10px",
         color: "#fff",
         boxShadow: "0 6px 12px rgba(0, 0, 0, 0.6)", // More prominent shadow
       }}
     >
-      <h2 style={{ marginBottom: "20px", fontSize: "2.0rem", textAlign: "center", color: "#FFD700" }}>
+      <h2 style={{ marginBottom: "10px", fontSize: "1.0rem", textAlign: "center", color: "#FFD700" }}>
         Communication Frequency
       </h2>
       {isLoading ? (
-        <p style={{ fontSize: "2.0rem", textAlign: "center" }}>Loading...</p>
+        <p style={{ fontSize: "1.0rem", textAlign: "center" }}>Loading...</p>
       ) : chartData.labels.length > 0 ? (
         <Bar
           ref={chartRef} // Attach the ref here
@@ -115,7 +115,7 @@ const CommunicationFrequencyReport = () => {
                   display: true,
                   text: "Methods of Communication",
                   color: "#fff", // White color for x-axis title
-                  font: { size: 30 }, // Larger font size for axis title
+                  font: { size: 20 }, // Larger font size for axis title
                 },
               },
               y: {
@@ -130,7 +130,7 @@ const CommunicationFrequencyReport = () => {
                   display: true,
                   text: "Frequency",
                   color: "#fff", // White color for y-axis title
-                  font: { size: 40}, // Larger font size for axis title
+                  font: { size: 20}, // Larger font size for axis title
                 },
               },
             },
@@ -138,7 +138,7 @@ const CommunicationFrequencyReport = () => {
           height={300} // Slightly larger height for a more prominent chart
         />
       ) : (
-        <p style={{ fontSize: "2.0rem", textAlign: "center" }}>No data available.</p>
+        <p style={{ fontSize: "1.0rem", textAlign: "center" }}>No data available.</p>
       )}
     </div>
   );

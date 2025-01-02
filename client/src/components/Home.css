@@ -3,7 +3,9 @@ body {
   margin: 0; 
   padding: 0;
   background-color: black; 
-  overflow: hidden; 
+  overflow: hidden;  /* Ensure scaling starts from the top-left corner */
+
+  
 }
 
 @keyframes slideInFromRight {
@@ -31,10 +33,10 @@ body {
 /* Logo Styles */
 .logo {
   position: absolute; 
-  top: 500px; 
-  right: 40px; 
-  width: 1700px; 
-  height: 1700px; 
+  top: 200px; 
+  right: 10px; 
+  width: 350px; 
+  height: 350px; 
   border-radius: 50%; 
   object-fit: cover;
   overflow: hidden; 
@@ -44,23 +46,22 @@ body {
 /* Typewriter Styles */
 .typewriter-container {
   position: absolute;
-  top: 1000px;
-  left: 100px;
-  font-size: 50px; 
+  top: 250px;
+  left: 50px;
+  font-size: 30px; 
   font-weight: bold; 
   color: white; 
   font-family: 'Courier New', Courier, monospace; 
-  font-size: 200px;
+  font-size: 45px;
 }
 
 /* Information Container */
 .info-container {
   position: absolute;
-  top: 1200px; /* Adjust this value to control vertical spacing below the typewriter text */
-  left: 100px; /* Align it with the typewriter text */
+  top: 300px; /* Adjust this value to control vertical spacing below the typewriter text */
+  left: 50px; /* Align it with the typewriter text */
   color: #ccc; /* Softer color for readability */
-  font-size: 60px; /* Appropriate font size for the information */
+  font-size: 20px; /* Appropriate font size for the information */
   font-family: 'Arial', sans-serif; /* Clean, readable font */
-  max-width: 2500px; /* Limit width for better layout */
-   /* Add spacing between lines for readability */
+  max-width: 650px;
 }

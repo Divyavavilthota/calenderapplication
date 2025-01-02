@@ -40,21 +40,21 @@ const Engagement = () => {
         color: "#fff",
         boxShadow: "0 6px 12px rgba(0, 0, 0, 0.6)", // Shadow for depth
         textAlign: "center",
-        marginTop: "290px", // Adjust this value as needed for spacing
-        marginLeft: "2700px", // Adjust this value for left spacing
-        width: "80%", // Full width of the container
-        maxWidth: "1000px", // Max width for the chart container
-        height: "1200px", // Increased height to fully cover the chart
+        marginTop: "90px", // Adjust this value as needed for spacing
+        marginLeft: "600px", // Adjust this value for left spacing
+        width: "60%", // Full width of the container
+        maxWidth: "300px", // Max width for the chart container
+        height: "350px", // Increased height to fully cover the chart
         display: "flex", // Flexbox to center content
         justifyContent: "center", // Center horizontally
         alignItems: "center", // Center vertically
       }}
     >
       <div style={{ width: "100%", height: "100%" }}>
-        <h2 style={{ marginBottom: "20px", fontSize: "4.5rem", color: "#FFD700" }}>
+        <h2 style={{ marginBottom: "20px", fontSize: "1.0rem", color: "#FFD700" }}>
           Engagement Breakdown
         </h2>
-        <div style={{ width: "100%", height: "100%" }}>
+        <div style={{ width: "90%", height: "70%" }}>
           <Pie
             ref={chartRef}
             data={data}
@@ -66,7 +66,7 @@ const Engagement = () => {
                   labels: {
                     color: "#fff",
                     font: {
-                      size: 50,
+                      size: 10,
                     },
                   },
                 },

@@ -1,27 +1,27 @@
 .dashboard-container {
-  padding: 10px;
+  padding: 5px;
   font-family: Arial, sans-serif;
 }
 
 .title {
-  font-size: 100px; /* Large title font */
+  font-size: 30px; /* Large title font */
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .notification-section {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
 .badge {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 5px;
   margin-right: 10px;
   border-radius: 5px;
   font-weight: bold;
-  font-size: 70px; /* Larger font for badges */
+  font-size: 20px; /* Larger font for badges */
 }
 
 .badge.overdue {
@@ -35,7 +35,7 @@
 }
 
 .company-table {
-  width: 70%; /* Reduced table width for more compact view */
+  width: 80%; /* Reduced table width for more compact view */
   margin: 0 auto;
   border-collapse: collapse;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -46,15 +46,15 @@
   border: 1px solid #ddd;
   padding: 6px; /* Smaller padding for compact layout */
   text-align: center; /* Centered text for neat alignment */
-  font-size: 50px; /* Increased font size for better visibility */
-  max-width: 100px; /* Reduced column width */
+  font-size: 10px; /* Increased font size for better visibility */
+  max-width: 10px; /* Reduced column width */
   word-wrap: break-word; /* Ensures text wraps inside columns */
   overflow-wrap: break-word;
 }
 
 .company-table th {
   font-weight: bold;
-  font-size: 50px; /* Slightly larger header font */
+  font-size: 10px; /* Slightly larger header font */
 }
 
 .communication-tooltip {
@@ -84,7 +84,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 50px; /* Bigger font for button text */
+  font-size: 20px; /* Bigger font for button text */
 }
 
 .action-btn:hover {
@@ -102,39 +102,39 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Align to the top of the screen */
-  padding-top: 50px; /* Adjust the space from the top */
+  padding-top: 30px; /* Adjust the space from the top */
 }
 
 .modal-content {
   background-color: white;
-  padding: 20px;
+  padding: 5px;
   width: 60%; /* Adjust width for modal */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
   overflow-y: auto; /* Allow scrolling if content overflows */
-  max-height: 80vh; /* Limit the height of the modal */
+  max-height: 30vh; /* Limit the height of the modal */
 }
 
 .modal h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .modal form {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Space between form elements */
+   /* Space between form elements */
 }
 
 .modal label {
-  font-size: 50px; /* Label font size */
+  font-size: 20px; /* Label font size */
 }
 
 .modal input,
 .modal select,
 .modal textarea {
-  padding: 10px;
-  font-size: 70px;
+  padding: 5px;
+  font-size: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -142,10 +142,10 @@
 .modal button {
   background-color: #007bff;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 5px;
   border: none;
   border-radius: 5px;
-  font-size: 70px;
+  font-size: 20px;
   cursor: pointer;
 }
 
