@@ -1,0 +1,133 @@
+/* Set the main container to take up the full width of the page and make it scrollable */
+.company-list-container {
+    float: left;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    padding-top: 50px; /* Add gap at the start of the container */
+    box-sizing: border-box; /* To include padding in the element's total width/height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scroll */
+}
+.company-box {
+    margin-left:200px;
+    width: calc(70% - 20px); /* Take up the full width and space between */
+    background-color: #f0f0f0;
+    padding-left: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding doesn't overflow the width */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Ensure space between the boxes vertically */
+    margin-top: 20px; /* Add gap at the start of each box */
+}
+.name{
+    align-items: center;
+}
+/* Heading and text styles */
+.company-box h4 {
+    margin: 0;
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+}
+.company-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+.company-box p {
+    font-size: 60px;
+    margin: 5px 0;
+    color: rgb(16, 15, 16);
+}
+
+/* Link styling */
+.company-box a {
+    color: #0077b6;
+    text-decoration: none;
+}
+
+.company-box a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons to edit and delete */
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 20px 15px;
+    background-color: #0077b6;
+    border: none;
+    font-size: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #005f8f;
+}
+form .form-group {
+    margin-bottom: 15px;
+  }
+  .edit-form-container {
+    margin-top: 30px;
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+  }
+  button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-actions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-actions button[type="button"] {
+    background-color: #ccc;
+  }
+  
+  .form-actions button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,0 +1,154 @@
+.dashboard-container {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 100px; /* Large title font */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notification-section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 70px; /* Larger font for badges */
+}
+
+.badge.overdue {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.badge.due-today {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.company-table {
+  width: 70%; /* Reduced table width for more compact view */
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-table th,
+.company-table td {
+  border: 1px solid #ddd;
+  padding: 6px; /* Smaller padding for compact layout */
+  text-align: center; /* Centered text for neat alignment */
+  font-size: 50px; /* Increased font size for better visibility */
+  max-width: 100px; /* Reduced column width */
+  word-wrap: break-word; /* Ensures text wraps inside columns */
+  overflow-wrap: break-word;
+}
+
+.company-table th {
+  font-weight: bold;
+  font-size: 50px; /* Slightly larger header font */
+}
+
+.communication-tooltip {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.communication-tooltip:hover {
+  text-decoration: underline;
+}
+
+.status.overdue {
+  color: red;
+  font-weight: bold;
+}
+
+.status.due-today {
+  color: orange;
+  font-weight: bold;
+}
+
+.action-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 50px; /* Bigger font for button text */
+}
+
+.action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top of the screen */
+  padding-top: 50px; /* Adjust the space from the top */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 60%; /* Adjust width for modal */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: 80vh; /* Limit the height of the modal */
+}
+
+.modal h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+.modal label {
+  font-size: 50px; /* Label font size */
+}
+
+.modal input,
+.modal select,
+.modal textarea {
+  padding: 10px;
+  font-size: 70px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 70px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
